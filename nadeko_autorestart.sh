@@ -8,7 +8,7 @@ else
 	exit 1
 fi
 
-cd NadekoBot/src/MidnightBot1.0
+cd NadekoBot/src/NadekoBot
 echo "Running NadekoBot with auto restart Please wait."
 while :; do dotnet run -c Release; sleep 5s; done
 echo "Done"
