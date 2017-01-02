@@ -32,7 +32,7 @@ cd "$tempdir"
 
 echo ""
 echo "Downloading NadekoBot, please wait."
-git clone -b master --recursive --depth 1 https://github.com/Midnight-Myth/MidnightBot1.0.git NadekoBot
+git clone -b master --recursive --depth 1 https://github.com/Midnight-Myth/Mitternacht.git NadekoBot
 echo ""
 echo "NadekoBot downloaded."
 
