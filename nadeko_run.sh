@@ -11,7 +11,7 @@ else
 	exit 1
 fi
 
-cd NadekoBot/src/NadekoBot
+cd NadekoBot/src/MidnightBot1.0
 echo "Running NadekoBot. Please wait."
 dotnet run --configuration Release
 echo "Done"
