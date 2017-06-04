@@ -36,6 +36,22 @@ git clone -b master --recursive --depth 1 https://github.com/Midnight-Myth/Mitte
 echo ""
 echo "NadekoBot downloaded."
 
+echo "Downloading Nadeko dependencies"
+  cd $root/$tempdir/NadekoBot/Discord.Net/src/Discord.Net.Core/
+  dotnet restore 1>/dev/null 2>&1
+  cd $root/$tempdir/NadekoBot/Discord.Net/src/Discord.Net.Rest/
+  dotnet restore 1>/dev/null 2>&1
+  cd $root/$tempdir/NadekoBot/Discord.Net/src/Discord.Net.WebSocket/
+  dotnet restore 1>/dev/null 2>&1
+  cd $root/$tempdir/NadekoBot/Discord.Net/src/Discord.Net.Commands/
+  dotnet restore 1>/dev/null 2>&1
+  cd $root/$tempdir/NadekoBot/src/NadekoBot/
+  dotnet restore 1>/dev/null 2>&1
+  echo ""
+  echo "Download done"
+  
+  echo ""
+
 echo ""
 echo "Building NadekoBot"
 cd $root/$tempdir/NadekoBot/src/NadekoBot/
