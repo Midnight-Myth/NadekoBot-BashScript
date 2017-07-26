@@ -32,13 +32,13 @@ cd "$tempdir"
 
 echo ""
 echo "Downloading MidnightBot, please wait."
-git clone -b master --recursive --depth 1 https://github.com/Midnight-Myth/Mitternacht-NEW.git
+git clone -b master --recursive --depth 1 https://github.com/Midnight-Myth/Mitternacht-NEW.git MidnightBot
 echo ""
 echo "MidnightBot downloaded."
 
 echo ""
 echo "Downloading MidnightBot dependencies"
-cd "$root/$tempdir/Mitternacht NEW"
+cd "$root/$tempdir/MidnightBot"
 dotnet restore
 echo ""
 echo "Download done"
