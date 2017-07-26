@@ -298,7 +298,7 @@ elif [ "$OS" = "CentOS" ]; then
 fi
 
 echo
-echo "NadekoBot Prerequisites Installation completed..."
+echo "MidnightBot Prerequisites Installation completed..."
 read -n 1 -s -p "Press any key to continue..."
 sleep 2
 
