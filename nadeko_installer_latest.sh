@@ -38,7 +38,7 @@ echo "MidnightBot downloaded."
 
 echo ""
 echo "Downloading MidnightBot dependencies"
-cd "$root/$tempdir/MidnightBot"
+cd "$root/$tempdir/Mitternacht NEW"
 dotnet restore
 echo ""
 echo "Download done"
