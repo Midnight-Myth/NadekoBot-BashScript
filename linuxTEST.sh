@@ -17,37 +17,37 @@ if [ $choice -eq 1 ] ; then
 
 	echo ""
 	echo "Downloading MidnightBot, please wait."
-	wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/1.4/nadeko_installer_latest.sh && bash "$root/nadeko_installer_latest.sh"
+	wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test/nadeko_installer_latest_test.sh && bash "$root/nadeko_installer_latest_test.sh"
 	echo ""
-	bash "$root/linuxAIOS.sh"
+	bash "$root/linuxTEST.sh"
 else
 		if [ $choice -eq 2 ] ; then
 			echo ""
 			echo "Running MidnightBot Normally, if you are running this to check MidnightBot, use .die command on discord to stop MidnightBot."
-			wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/1.4/nadeko_run.sh && bash "$root/nadeko_run.sh"
+			wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test/nadeko_run.sh && bash "$root/nadeko_run.sh"
 			echo ""
 			echo "Welcome back to MidnightBot."
 			sleep 2s
-			bash "$root/linuxAIOS.sh"
+			bash "$root/linuxTEST.sh"
 		else
 			if [ $choice -eq 3 ] ; then
 				echo ""
 				echo "Running MidnightBot with Auto Restart you will have to close the session to stop the auto restart."
 				sleep 5s
-				wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/1.4/NadekoAutoRestartAndUpdate.sh && bash "$root/NadekoAutoRestartAndUpdate.sh"
+				wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test/NadekoAutoRestartAndUpdate.sh && bash "$root/NadekoAutoRestartAndUpdate.sh"
 				echo ""
 				echo "That did not work?"
 				sleep 2s
-				bash "$root/linuxAIOS.sh"
+				bash "$root/linuxTEST.sh"
 			else
 				if [ $choice -eq 4 ] ; then
 					echo ""
 					echo "Getting the Auto-Installer for Debian/Ubuntu"
-					wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/1.4/nadekoautoinstaller.sh && bash "$root/nadekoautoinstaller.sh"
+					wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test/nadekoautoinstaller.sh && bash "$root/nadekoautoinstaller.sh"
 					echo ""
 					echo "Welcome back..."
 					sleep 2s
-					bash "$root/linuxAIOS.sh"
+					bash "$root/linuxTEST.sh"
 				else
 					if [ $choice -eq 5 ] ; then
 						echo ""
@@ -62,7 +62,7 @@ while true; do
     esac
 done
 clear
-cd "$root/MidnightBot/src/MidnightBot"
+cd "$root/TestBot/src/MidnightBot"
 mv credentials.json credentials.json.old
 
 echo Please enter your bot client ID:
@@ -147,7 +147,7 @@ echo Credentials setup completed.
 sleep 5
 clear
 cd "$root"
-bash "$root/linuxAIOS.sh"
+bash "$root/linuxTEST.sh"
 					else
 						if [ $choice -eq 6 ] ; then
 							echo ""
