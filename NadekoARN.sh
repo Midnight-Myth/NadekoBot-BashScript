@@ -5,16 +5,16 @@ root=$(pwd)
 youtube-dl -U
 
 sleep 5s
-cd "$root/MidnightBot"
+cd "$root/TestBot"
 dotnet restore && dotnet build --configuration Release
 
-while :; do cd "$root/MidnightBot/src/NadekoBot" && dotnet run -c Release; sleep 5s; done
+while :; do cd "$root/TestBot/src/NadekoBot" && dotnet run -c Release; sleep 5s; done
 echo ""
 echo "That didn't work? Please report in #NadekoLog Discord Server."
 sleep 3s
 
 cd "$root"
-bash "$root/linuxAIOS.sh"
+bash "$root/linuxTEST.sh"
 echo "Done"
 
 exit 0
