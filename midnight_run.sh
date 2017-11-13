@@ -14,7 +14,7 @@ fi
 cd "$root/MidnightBot"
 dotnet restore
 dotnet build --configuration Release
-cd "$root/MidnightBot/src/MidnightBot"
+cd "$root/MidnightBot/src/NadekoBot"
 echo "Running MidnightBot. Please wait."
 dotnet run --configuration Release
 echo "Done"
