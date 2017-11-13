@@ -1,14 +1,14 @@
 #!/bin/sh
 echo ""
-echo "Running NadekoBot with auto restart normally! (without updating)"
+echo "Running MidnightBot with auto restart normally! (without updating)"
 root=$(pwd)
 youtube-dl -U
 
 sleep 5s
-cd "$root/NadekoBot"
+cd "$root/MidnightBot"
 dotnet restore && dotnet build --configuration Release
 
-while :; do cd "$root/NadekoBot/src/NadekoBot" && dotnet run -c Release; sleep 5s; done
+while :; do cd "$root/MidnightBot/src/MidnightBot" && dotnet run -c Release; sleep 5s; done
 echo ""
 echo "That didn't work? Please report in #NadekoLog Discord Server."
 sleep 3s
