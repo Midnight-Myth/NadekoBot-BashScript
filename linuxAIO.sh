@@ -62,7 +62,7 @@ while true; do
     esac
 done
 clear
-cd "$root/MidnightBot/src/MidnightBot"
+cd "$root/MidnightBot/src/NadekoBot"
 mv credentials.json credentials.json.old
 
 echo Please enter your bot client ID:
