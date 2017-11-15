@@ -32,7 +32,7 @@ cd "$tempdir"
 
 echo ""
 echo "Downloading MidnightBot, please wait."
-git clone -b master --recursive --depth 1 https://github.com/Midnight-Myth/Mitternacht-NEW.git MidnightBot
+git clone -b testing --recursive --depth 1 https://github.com/Midnight-Myth/Mitternacht-NEW.git MidnightBot
 echo ""
 echo "MidnightBot downloaded."
 
