@@ -17,14 +17,14 @@ if [ $choice -eq 1 ] ; then
 
 	echo ""
 	echo "Downloading MidnightBot, please wait."
-	wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/2.0/midnight_installer_latest.sh && bash "$root/midnight_installer_latest.sh"
+	wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test2/midnight_installer_latest.sh && bash "$root/midnight_installer_latest.sh"
 	echo ""
 	bash "$root/linuxAIO.sh"
 else
 		if [ $choice -eq 2 ] ; then
 			echo ""
 			echo "Running Midnight Normally, if you are running this to check Midnight, use .die command on discord to stop Midnight."
-			wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/2.0/midnight_run.sh && bash "$root/midnight_run.sh"
+			wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test2/midnight_run.sh && bash "$root/midnight_run.sh"
 			echo ""
 			echo "Welcome back to MidnightBot."
 			sleep 2s
@@ -34,7 +34,7 @@ else
 				echo ""
 				echo "Running Midnight with Auto Restart you will have to close the session to stop the auto restart."
 				sleep 5s
-				wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/2.0/MidnightAutoRestartAndUpdate.sh && bash "$root/MidnightAutoRestartAndUpdate.sh"
+				wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test2/MidnightAutoRestartAndUpdate.sh && bash "$root/MidnightAutoRestartAndUpdate.sh"
 				echo ""
 				echo "That did not work?"
 				sleep 2s
@@ -43,7 +43,7 @@ else
 				if [ $choice -eq 4 ] ; then
 					echo ""
 					echo "Getting the Auto-Installer for Debian/Ubuntu"
-					wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/2.0/midnightautoinstaller.sh && bash "$root/midnightautoinstaller.sh"
+					wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test2/midnightautoinstaller.sh && bash "$root/midnightautoinstaller.sh"
 					echo ""
 					echo "Welcome back..."
 					sleep 2s
