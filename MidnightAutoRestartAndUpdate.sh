@@ -14,11 +14,11 @@ while [ $choice -eq 4 ]; do
 read choice
 if [ $choice -eq 1 ] ; then
 	echo ""
-	wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/2.0/MidnightARN.sh && bash "$root/MidnightARN.sh"
+	wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test2/MidnightARN.sh && bash "$root/MidnightARN.sh"
 else
 	if [ $choice -eq 2 ] ; then
 		echo ""
-		wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/2.0/MidnightARU_Latest.sh && bash "$root/MidnightARU_Latest.sh"
+		wget -N https://github.com/Midnight-Myth/NadekoBot-BashScript/raw/test2/MidnightARU_Latest.sh && bash "$root/MidnightARU_Latest.sh"
 	else
 			if [ $choice -eq 3 ] ; then
 				echo ""
