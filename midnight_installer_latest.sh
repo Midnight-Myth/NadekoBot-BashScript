@@ -73,7 +73,7 @@ else
     echo "Other data copied to the new version"
 fi
 
-rm -r "$tempdir"
+rm -rf "$tempdir"
 echo ""
 echo "Installation Complete."
 
