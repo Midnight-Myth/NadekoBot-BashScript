@@ -71,6 +71,8 @@ if [ "$OS" = "Ubuntu" ]; then
 		supported=1
 	elif [ "$VER" = "17.04" ]; then
 		supported=1
+	elif [ "$VER" = "18.04" ]; then
+		supported=1
 	else
 		supported=0
 	fi
@@ -179,6 +181,25 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 	sudo chmod a+rx /usr/local/bin/youtube-dl
 	elif [ "$VER" = "17.04" ]; then
+	echo ""
+	echo "Preparing..."
+	sudo apt-get update
+	sudo apt-get install software-properties-common apt-transport-https curl -y
+	curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+	sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+	sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod zesty main" > /etc/apt/sources.list.d/dotnetdev.list'
+	sudo apt-get update
+	sudo apt-get upgrade -y
+	sudo apt-get dist-upgrade -y
+	echo "Installing Git..."
+	sudo apt-get install git -y
+	echo "Installing .NET Core..."
+	sudo apt-get install dotnet-sdk-2.0.0 -y
+	echo "Installing prerequisites..."
+	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
+	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+	sudo chmod a+rx /usr/local/bin/youtube-dl
+	elif [ "$VER" = "18.04" ]; then
 	echo ""
 	echo "Preparing..."
 	sudo apt-get update
