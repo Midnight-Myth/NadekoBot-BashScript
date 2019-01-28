@@ -26,7 +26,7 @@ fi
 root=$(pwd)
 tempdir=MidnightInstall_Temp
 
-rm -r "$tempdir" 1>/dev/null 2>&1
+rm -rf "$tempdir" 1>/dev/null 2>&1
 mkdir "$tempdir"
 cd "$tempdir"
 
